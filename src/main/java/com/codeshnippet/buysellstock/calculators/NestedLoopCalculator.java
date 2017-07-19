@@ -5,8 +5,8 @@ import com.codeshnippet.buysellstock.MaxProfitCalculator;
 public class NestedLoopCalculator implements MaxProfitCalculator {
 
     public double calculateProfit(double[] prices) {
-        // Covering null or empty input edge-case
-        if (prices == null || prices.length == 0 || prices.length == 1) {
+        // Covering edge-cases
+        if (prices == null || prices.length < 2) {
             return 0.0;
         }
 
